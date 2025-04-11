@@ -1,0 +1,114 @@
+.root {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  align-content: flex-start;
+  justify-items: center;
+  min-width: 0;
+  min-height: 0;
+  grid-template-columns:
+    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
+    min(
+      var(--plsmc-standard-width),
+      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
+    )
+    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
+  padding: 0px;
+}
+.root > * {
+  grid-column: 4;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    border: 1px solid #222222;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root > * {
+    grid-column: 4;
+  }
+}
+.desktop1 {
+  background: rgba(237, 237, 237, 1);
+  width: 1440px;
+  height: 1024px;
+  display: block;
+}
+.text__pNhD {
+  display: block;
+  font-size: 128px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 36px;
+  left: 52px;
+  width: 624px;
+}
+.group1 {
+  width: 477px;
+  height: 102px;
+  display: block;
+  position: absolute;
+  top: 863px;
+  left: 498px;
+}
+.rectangle1 {
+  background: rgba(0, 0, 0, 1);
+  width: 445px;
+  height: 78px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 27px;
+}
+.text__gleuH {
+  display: block;
+  font-size: 36px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 17px;
+  left: 86px;
+}
+.frame {
+  transform: scale(0.9999999800450914, 0.9999999800450914)
+    rotate(17.72465169203642deg) translate(0.222137451171875px, 0px);
+  width: 51px;
+  height: 51px;
+  display: block;
+  transform-origin: top left;
+  position: absolute;
+  top: 39px;
+  left: 429px;
+  overflow: hidden;
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  color: gold;
+  transform: translate(9.5367431640625e-7px, 9.5367431640625e-7px);
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: 9.99%;
+  left: 9.99%;
+}
+.frame1 {
+  transform: translate(-0.4999980926513672px, 0.4999999403953552px);
+  width: 100%;
+  height: 101.99%;
+  display: block;
+  position: absolute;
+  top: -2%;
+  left: 27.99%;
+  overflow: hidden;
+}
